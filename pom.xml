@@ -35,6 +35,10 @@
         <!-- airbase PMD setup is outdated -->
         <air.check.skip-pmd>true</air.check.skip-pmd>
 
+        <!-- airbase currently defaults to legacy URL, see https://central.sonatype.org/publish/publish-maven/#distribution-management-and-authentication -->
+        <air.repository.snapshot.url>https://s01.oss.sonatype.org/content/repositories</air.repository.snapshot.url>
+        <air.repository.release.url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</air.repository.release.url>
+
         <dep.airlift.version>239</dep.airlift.version>
     </properties>
 
