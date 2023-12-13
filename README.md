@@ -40,10 +40,10 @@ Get it from Maven Central
 
 # Other Java cache implementations
 
-- Guava `Cache` (which this library is baseed on). Awesome if you do not need
+- [Guava](https://github.com/google/guava) `Cache` (which this library is baseed on). Awesome if you do not need
   strong visibility guarantees after `invalidate()` (or when you do not need `invalidate()` at all),
   or when cache usage is not concurrent (multi-threaded).
-- Caffeine (recommended by Guava javadocs). It comes in two flavors: synchronous and async.
+- [Caffeine](https://github.com/ben-manes/caffeine) (recommended by Guava javadocs). It comes in two flavors: synchronous and async.
   - Synchronous is awesome if you don't mind that invalidation blocks waiting for ongoing loads to finish.
   - Async is awesome if you do not need strong visibility guarantees after `invalidate()`, or some infrequent
     race conditions are acceptable.
