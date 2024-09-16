@@ -29,7 +29,7 @@
     </scm>
 
     <properties>
-        <project.build.targetJdk>17</project.build.targetJdk>
+        <project.build.targetJdk>21</project.build.targetJdk>
         <air.compiler.fail-warnings>true</air.compiler.fail-warnings>
         <air.modernizer.java-version>8</air.modernizer.java-version>
         <!-- airbase PMD setup is outdated -->
@@ -104,6 +104,18 @@
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.openjdk.jmh</groupId>
+            <artifactId>jmh-core</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.openjdk.jmh</groupId>
+            <artifactId>jmh-generator-annprocess</artifactId>
             <scope>test</scope>
         </dependency>
     </dependencies>
